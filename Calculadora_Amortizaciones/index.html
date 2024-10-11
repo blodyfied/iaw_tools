@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="icon" href="linux.png" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario de Préstamo</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="container">
+		<img src="linux.png" alt="Logo Linux" width="100" class="logo"><br><br>
+		<h1>Calculadora de Préstamo</h1>
+		<form action="prestamo.php" method="post" class="form">
+			<input type="number" name="capital" placeholder="Importe del préstamo" required class="form-input">
+			<input type="number" name="interes" placeholder="Interés anual (%)" required class="form-input">
+			<input type="number" name="plazo" placeholder="Años del préstamo" required class="form-input">
+			
+			<select name="periodicidad" class="form-select">
+				<option value="1">Anual</option>
+				<option value="2">Semestral</option>
+				<option value="4">Trimestral</option>
+				<option value="6">Bimensual</option>
+				<option value="12">Mensual</option>
+			</select>
+			
+			<input type="submit" value="Calcular" class="form-submit">		
+		</form>
+	</div>
+</body>
+</html>
